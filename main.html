@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Travel Agency
+        </title>
+        <link href="images\title.png" rel="icon">
+
+        <style>
+            *{
+                margin: 0;
+                padding:0;
+            }
+            html{
+                scroll-behavior: smooth;
+            }
+            .A{
+                background-color: rgba(17, 17, 16, 0.758);
+                display:flex;
+                align-items: center;
+            }
+            .A img,li,ul
+            {
+                display: inline;
+            }
+            .A img{
+                height: 150px;
+                width:  175px;
+            }
+            .A nav ul li{
+                font-size: 25px;
+                padding: 20px;
+                margin-left: 35px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                transition: 0.5s;
+            }
+            .A nav ul li a{
+                text-decoration: none;
+                text-align: center;
+                color:rgb(255, 253, 253);
+            }
+            .active, .A nav ul li:hover
+            {
+                background: rgb(0, 0, 0);
+                border-radius: 30px;
+                padding:30px;
+                transform: scale(1,1);
+            }
+            .B{
+                text-align: center;
+                position: relative;
+            }
+            .B img{
+                height: 1000px;
+                width:1519px;
+                display: block;
+                filter: blur(0px);
+            }
+            .B1{
+                position: absolute;
+                top: 50.5%;
+                left: 50.5%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: white;
+            }
+            .B1 h1{
+                font-size: 90px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .B1 h3{
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .C{
+                margin:0px;
+                padding:80px;
+                background-color: rgb(255, 255, 255);
+                
+            }
+            .C1{
+                background-color: rgb(232, 241, 241);
+                display: inline-block;
+                width: 120px;
+                padding-left:60px;
+                padding-right: 60px;
+                padding-bottom:50px;
+                padding-top:50px;
+                transition:0.5s;
+            }
+            .C2{
+                background-color: rgb(232, 241, 241);
+                display: inline-block;
+                width: 120px;
+                padding-left:60px;
+                padding-right: 60px;
+                padding-bottom:50px;
+                padding-top:50px;
+                transition:0.5s;
+            }
+            .C3{
+                background-color: rgb(232, 241, 241);
+                display: inline-block;
+                width: 120px;
+                padding-left:60px;
+                padding-right: 60px;
+                padding-bottom:50px;
+                padding-top:50px;
+                transition:0.5s;
+            }
+            .C1,.C2,.C3{
+                margin-left: 155px;
+                margin-bottom:25px;
+                margin-top: 25px;
+            }
+            .C1 img, .C2 img, .C3 img{
+                width: 100px;
+                height: 100px;
+            }
+            .C h3{
+                font-size:larger;
+            }
+            .C1:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(255, 255, 255) 0px 22px 70px 4px;
+                border: 0.5px solid rgb(255, 255, 255);
+            }
+            .C2:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(255, 255, 255) 0px 22px 70px 4px;
+                border: 0.5px solid rgb(255, 255, 255);
+            }
+            .C3:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(255, 255, 255) 0px 22px 70px 4px;
+                border: 0.5px solid rgb(255, 255, 255);
+            }
+            .D{
+                background-color: rgb(39, 39, 39);
+                padding-bottom: 45px;
+                padding-top:25px;
+            }
+            .D1{
+                display:flex;
+                flex-wrap:wrap;
+                justify-content: space-around;
+                padding-top: 20px;
+            }
+            .D h1{
+                text-align: center;
+                font-size: 50px;
+                padding-top: 25px;
+                color:white;
+                margin-bottom: 30px;
+            }
+            .D1 img{
+                height:300px;
+                width:350px;
+                margin-right:45px;
+                margin-bottom:45px;
+                margin-left: 35px;
+
+            }
+            .D1 img:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(0, 0, 0) 0px 22px 30px 4px;
+                border: 0.5px solid rgb(0, 0, 0);
+            }
+            .E{
+                text-align: center;
+                display:inline-block;
+                margin-bottom: 50px;
+            }
+            .E h1{
+                font-size: 40px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                padding:35px;
+            }
+            .E p{
+                font-size:20px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            .F{
+                background-color: rgb(39, 39, 39);
+                padding-bottom:45px;
+            }
+            .F h1{
+                padding-top:60px;
+                text-align: center;
+                color:white;
+                margin-bottom: 30px;
+            }
+            .F1 img{
+                padding-bottom:25px;
+                height:250px;
+                width:250px;
+            }
+            .F1{
+                padding-top:25px;
+            }
+            .F1-1{
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;
+                margin-left:200px;
+                background-color: white;
+                transition: 2s;
+                background-color: black;
+            }
+            .F1-1 p{
+                margin-top:-15px;
+                margin-bottom: 10px;
+                padding-top:2px;
+                padding-bottom: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 25px;
+                color:rgb(255, 255, 255);
+            }
+            .F1-2{
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;
+                margin-left:175px;
+                background-color: white;
+                transition: 2s;
+                background-color: black;
+            }
+            .F1-2 p{
+                margin-top:-15px;
+                margin-bottom: 10px;
+                padding-top:2px;
+                padding-bottom: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 25px;
+                color:rgb(255, 255, 255);
+            }
+            .F1-3{
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;
+                margin-left:200px;
+                background-color: white;
+                transition: 2s;
+                background-color: black;
+            }
+            .F1-3 p{
+                margin-top:-15px;
+                margin-bottom: 10px;
+                padding-top:2px;
+                padding-bottom: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 20px;
+                color:rgb(255, 255, 255);
+            }
+            .F1-4{
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;
+                margin-left:415px;
+                background-color: white;
+                transition: 2s;
+                background-color: black;
+            }
+            .F1-4 p{
+                margin-top:-15px;
+                margin-bottom: 10px;
+                padding-top:2px;
+                padding-bottom: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 25px;
+                color:rgb(255, 255, 255);
+            }
+            .F1-5{
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;
+                margin-left: 185px;
+                background-color: rgb(0, 0, 0);
+                transition: 2s;
+            }
+            .F1-5 p{
+                margin-top:-15px;
+                margin-bottom: 10px;
+                padding-top:2px;
+                padding-bottom: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 25px;
+                color:rgb(255, 255, 255);
+            }
+            .F1-alpha{
+                padding-top:45px;
+                margin-top:30px;
+                margin-bottom: 30px;
+            }
+            .F1-1:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(0, 0, 0) 0px 20px 40px 4px;
+                border: 0.5px solid rgb(0, 0, 0);
+            }
+            .F1-2:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(0, 0, 0) 0px 20px 40px 4px;
+                border: 0.5px solid rgb(0, 0, 0);
+            }
+            .F1-3:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(0, 0, 0) 0px 20px 40px 4px;
+                border: 0.5px solid rgb(0, 0, 0);
+            }
+            .F1-4:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(0, 0, 0) 0px 20px 40px 4px;
+                border: 0.5px solid rgb(0, 0, 0);
+            }
+            .F1-5:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(0, 0, 0) 0px 20px 40px 4px;
+                border: 0.5px solid rgb(0, 0, 0);
+            }
+            .G{
+                background-color: rgb(255, 255, 255);
+                padding-bottom:45px;
+            }
+            .G h1{
+                padding-top:50px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .G1 img{
+                padding-bottom:25px;
+                height:250px;
+                width:250px;
+            }
+            .G1{
+                padding-top:35px;
+            }
+            .G1-1{
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;
+                margin-left:200px;
+                background-color: white;
+                transition: 2s;
+            }
+            .G1-1 p{
+                margin-top:-15px;
+                margin-bottom: 10px;
+                padding-top:2px;
+                padding-bottom: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 25px;
+                color:black;
+            }
+            .G1-2{
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;
+                margin-left:185px;
+                background-color: white;
+                transition: 2s;
+            }
+            .G1-2 p{
+                margin-top:-15px;
+                margin-bottom: 10px;
+                padding-top:2px;
+                padding-bottom: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 25px;
+                color:black;
+            }
+            .G1-3{
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;
+                margin-left:185px;
+                background-color: white;
+                transition: 2s;
+            }
+            .G1-3 p{
+                margin-top:-15px;
+                margin-bottom: 10px;
+                padding-top:2px;
+                padding-bottom: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 25px;
+                color:black;
+            }
+            .G1-4{
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;
+                margin-left:155px;
+                background-color: white;
+                transition: 2s;
+            }
+            .G1-4 p{
+                margin-top:-15px;
+                margin-bottom: 10px;
+                padding-top:2px;
+                padding-bottom: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 25px;
+                color:black;
+            }
+            .G1-5{
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;
+                margin-left:185px;
+                background-color: white;
+                transition: 2s;
+            }
+            .G1-5 p{
+                margin-top:-15px;
+                margin-bottom: 10px;
+                padding-top:2px;
+                padding-bottom: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 25px;
+                color:black;
+            }
+            .G1-6{
+                margin-left:185px;
+                display:inline-block;
+                background-color: rgb(255, 255, 255);
+                transition: 2s;
+            }
+            .G1-alpha{
+                padding:45px;
+                margin-top: 30px;
+            }
+            .G1-1:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(255, 255, 255) 0px 20px 40px 4px;
+                border: 2px solid rgb(0, 0, 0);
+            }
+            .G1-2:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(255, 255, 255) 0px 20px 40px 4px;
+                border: 2px solid rgb(0, 0, 0);
+            }
+            .G1-3:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(255, 255, 255) 0px 20px 40px 4px;
+                border: 2px solid rgb(0, 0, 0);
+            }
+            .G1-4:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(255, 255, 255) 0px 20px 40px 4px;
+                border: 2px solid rgb(0, 0, 0);
+            }
+            .G1-5:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(255, 255, 255) 0px 20px 40px 4px;
+                border: 2px solid rgb(0, 0, 0);
+            }
+            .G1-6:hover{
+                transform: scale(1.1);
+            }
+            .H{
+                background-color: rgb(39, 39, 39);
+                padding-bottom:45px;
+            }
+            .H h1{
+                padding-top:50px;
+                text-align: center;
+                color:white;
+                margin-bottom: 30px;
+            }
+            .H1 img{
+                padding-bottom:25px;
+                height:250px;
+                width:250px;
+            }
+            .H1{
+                padding-top:35px;
+            }
+            .H1-1{
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;
+                margin-left:200px;
+                background-color: white;
+                transition: 2s;
+                background-color: black;
+            }
+            .H1-1 p{
+                margin-top: -15px;
+                margin-bottom: 10px;
+                padding-top:2px;
+                padding-bottom: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 25px;
+                color:rgb(255, 255, 255);
+            }
+            .H1-2{
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;
+                margin-left:185px;
+                background-color: white;
+                transition: 2s;
+                background-color: black;
+            }
+            .H1-2 p{
+                margin-top: -15px;
+                margin-bottom: 10px;
+                padding-top:2px;
+                padding-bottom: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 25px;
+                color:rgb(255, 255, 255);
+            }
+            .H1-3{
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;
+                margin-left:185px;
+                background-color: white;
+                transition: 2s;
+                background-color: black;
+            }
+            .H1-3 p{
+                margin-top: -15px;
+                margin-bottom: 10px;
+                padding-top:2px;
+                padding-bottom: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 25px;
+                color:rgb(255, 255, 255);
+            }
+            .H1-4{
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;
+                margin-left:155px;
+                background-color: white;
+                transition: 2s;
+                background-color: black;
+            }
+            .H1-4 p{
+                margin-top: -15px;
+                margin-bottom: 10px;
+                padding-top:2px;
+                padding-bottom: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 25px;
+                color:rgb(255, 255, 255);
+            }
+            .H1-5{
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                display: inline-block;
+                margin-left:185px;
+                background-color: white;
+                transition: 2s;
+                background-color: black;
+            }
+            .H1-5 p{
+                margin-top: -15px;
+                margin-bottom: 10px;
+                padding-top:2px;
+                padding-bottom: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 25px;
+                color:rgb(255, 255, 255);
+            }
+            .H1-6{
+                margin-left:185px;
+                display:inline-block;
+                background-color: rgb(39, 39, 39);
+                transition: 2s;
+            }
+            .H1-alpha{
+                padding:45px;
+                margin-bottom: 45px;
+            }
+            .H1-1:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(0, 0, 0) 0px 20px 40px 4px;
+                border: 1px solid rgb(0, 0, 0);
+            }
+            .H1-2:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(0, 0, 0) 0px 20px 40px 4px;
+                border: 1px solid rgb(0, 0, 0);
+            }
+            .H1-3:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(0, 0, 0) 0px 20px 40px 4px;
+                border: 1px solid rgb(0, 0, 0);
+            }
+            .H1-4:hover{
+                transform: scale(1.1);
+                box-shadow:rgb(0, 0, 0) 0px 20px 40px 4px;
+                border: 1px solid rgb(0, 0, 0);
+            }
+            .H1-5:hover{
+                transform: scale(1.1);
+                box-shadow: rgb(0, 0, 0) 0px 20px 40px 4px;
+                border: 0.5px solid rgb(0, 0, 0);
+            }
+            .H1-6:hover{
+                transform: scale(1.1);
+            }
+            .I{
+                display: inline-block;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color:white;
+                background-color: rgb(0, 0, 0);
+            }
+            .IA {
+                display:inline-flex;
+                margin-top:45px;
+            }
+            .I1{
+                margin-left: 130px;
+            }
+            .I1 h3{
+                margin-top: 25px;
+            }
+            .I2{
+                margin-left: 220px;
+            }
+            .I2 h3{
+                margin-left:4px;
+                margin-top: 25px;
+            }
+            .I3{
+                margin-left: 245px;
+                display: inline-flexbox;
+            }
+            .I3-1,.I3-2{
+                display: inline-table;
+                margin-top:25px;
+            }
+            .I3-1 h3{
+                margin-bottom:5px;
+            }
+            .I3-2 h3{
+                margin-left: 40px;
+                margin-bottom:5px;
+            }
+            .I3 h1{
+                margin-bottom: 20px;
+            }
+            .IB {
+                margin-top:45px;
+                display:inline-flex;
+            }
+            .I4{
+                
+                margin-left: 130px;
+            }
+            .I4 h2{
+                margin-top:25px;
+            }
+            .I5{
+                margin-left: 300px;   
+            }
+            .I5 img{
+                height:50px;
+                width:50px;
+                padding:7px;
+            }
+            .I5 img{
+                margin-top:25px;
+            }
+            .I6{
+                margin-left: 125px;
+            }
+            .I6 h2{
+                margin-top:25px;
+            }
+            .I4,.I5,.I6{
+                margin-bottom:45px;
+            }
+            .arrow{
+                position: fixed;
+                bottom: 3.5rem;
+                right:1rem;
+                border-radius: 5px;
+                border-color: red;
+                border-style: solid;
+                background-color: white;
+                display:inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding:0.5rem;
+                text-decoration: none;
+                transition:0.2s ease-out
+            }
+            .arrow img{
+                transition: 0.2s ease-out;
+            }
+            .arrow:hover{
+                background-color: rgb(255, 255, 255);
+            }
+            .arrow:hover img{
+                transform:translateY(-2px);
+            }
+            .J{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 1190px;
+            }
+            .J a{
+                text-decoration: none;
+                color:rgb(0, 38, 255)
+            }
+            .Enquiry{
+                display: inline-block;
+                position:fixed;
+                bottom:3.5rem;
+                left:3rem;
+            }
+            .Enquiry h3{
+                background-color:rgb(0, 0, 0);
+                border:2px solid red;
+                font-size: 25px;
+                border-radius: 20px;
+                font-family:sans-serif;
+                padding:12px;
+                transition: 1s;
+            }
+            .Enquiry h3 a{
+                text-decoration: none;
+                color:rgb(255, 255, 255)
+            }
+            .Enquiry h3:hover{
+                background: rgb(0, 0, 0);
+                border-radius: 20px;
+                transform: scale(1.1);
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="A">
+            <img src="images\title.png" rel="title" alt="title">
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#Packages section">PACKAGES</a></li>
+                    <li><a href="#">WEDDING</a></li>
+                    <li><a href="#">HONEYMOON</a></li>
+                    <li><a href="#">GROUP TOURS</a></li>
+                    <li><a href="#Contact us">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="B">
+            <img src="images\front page.jpg" alt="front page">
+            <div class="B1">
+            <h1>TRAVEL ACROSS THE WORLD</h1>
+            <h3>A journey of a thousand miles begins with a single step</h3>
+            </div>
+        </div>
+
+        <div class="C">
+            <div class="C1">
+                <img src="images\block 1\clients.png" alt="clients">
+                <h3>30000+ Abroad Trips</h3>
+            </div>
+            <div class="C2">
+                <img src="images\block 1\customer.png" alt="customers">
+                <h3>100% Happy Customers</h3>
+            </div>
+            <div class="C3">
+                <img src="images\block 1\locations.png" alt="locations">
+                <h3>Fabulous Experiences</h3>
+            </div>
+        </div>
+
+        <div class="D">
+            <h1>GALLERY</h1>
+            <div class="D1">
+            <img src="images\block 2\australia.jpg" alt="Australia">
+            <img src="images\block 2\boating.jpg" alt="boating">
+            <img src="images\block 2\campfire.jpg" alt="campfire">
+            <img src="images\block 2\desert.webp" alt="desert">
+            <img src="images\block 2\venice.jpg" alt="venice">
+            <img src="images\block 2\island.jpg" alt="island">
+            <img src="images/block 2/paragliding.jpeg" alt="parachute">
+            <img src="images\block 2\trekking.jpg" alt="trekking">
+            <img src="images\block 2\wildlife.jpg" alt="wildlife">
+            <img src="images\block 2\tajmahal.jpeg" alt="tajmahal">
+            <img src="images\block 2\waterfall.jpg" alt="waterfall">
+            <img src="images/block 2/beach.webp" alt="beach">
+            </div>
+        </div>
+
+        <div class="E">
+            <h1>About Us</h1>
+            <center><hr style="width: 200px;text-align:center;margin-top:-20px;margin-bottom: 15px;"></center>
+            <br>
+            <p>Welcome to Travel Agency, where wanderlust meets convenience. As seasoned travel enthusiasts, we are dedicated to curating unforgettable travel experiences for our clients. With years of expertise in the industry, our passionate team endeavors to craft seamless journey tailored to your desirses.</p>
+            <p>At Travel Agency, we believe in more than just selling trips; we're committed to creating moments that last a lifetime. Our personalized approach ensures that every itinerary is meticulously planned, reflecting ypur preferences and aspirations<p>
+            <p>Join us in discoveering the World's wonders, one destination at a time. Your journey begins with Travel Agency.</p>
+        </div>
+
+        <div class="F">
+            <h1>TOURISM IN INDIA</h1>
+
+            <div class="F1">
+
+            <a href="#" style="text-decoration: none;"><div class="F1-1"><img src="images\block 3\north india.jpg" alt="Tajmahal">
+                <br>
+            <p>North India</p></div>
+            </a>
+            <a href="#" style="text-decoration: none;"><div class="F1-2"><img src="images\block 3\south india.jpg" alt="Madurai">
+                <br>
+            <p>South India</p></div>
+            </a>
+
+            <a href="#" style="text-decoration: none;"><div class="F1-3"><img src="images\block 3\east india.jpg" alt="Buddha">
+                <br>
+            <p>East India</p></div>
+            </a>
+
+            <br>
+            <div class="F1-alpha">
+            <a href="#" style="text-decoration: none;"><div class="F1-4"><img src="images/block 3/west india.jpg" alt="Mumbai">
+                <br>
+            <p>West India</p></div>
+            </a>
+
+            <a href="#" style="text-decoration: none;"><div class="F1-5"><img src="images\block 3\central india.avif" alt="fort">
+                <br>
+            <p >Central India</p></div>
+            </a>
+            </div>
+            </div>
+        </div>
+
+        <div class="G">
+            <h1>TOURISM ACROSS THE WORLD</h1>
+
+            <div class="G1">
+                <a href="#" style="text-decoration: none;"><div class="G1-1"><img src="images\block 5\istanbul.jpeg" alt="Istanbul">
+                    <br>
+                <p>Istanbul</p></div>
+                </a>
+
+                <a href="#" style="text-decoration: none;"><div class="G1-2"><img src="images\block 5\kyoto.jpg" alt="Kyoto">
+                    <br>
+                <p>Kyoto</p></div>
+                </a>
+
+                <a href="#" style="text-decoration: none;"><div class="G1-3"><img src="images\block 5\lasvegas.jpg" alt="LasVegas">
+                    <br>
+                <p>Las Vegas</p></div>
+                </a>
+
+                <br>
+
+                <div class="G1-alpha">
+                    <a href="#" style="text-decoration: none;"><div class="G1-4"><img src="images/block 5/newyork.jpg" alt="New York">
+                        <br>
+                    <p>New York</p></div>
+                    </a>
+
+                    <a href="#" style="text-decoration: none;"><div class="G1-5"><img src="images\block 5\paris.jpeg" alt="Paris">
+                        <br>
+                    <p>Paris</p></div>
+                    </a>
+
+                    <a href="#" style="text-decoration: none;"><div class="G1-6"><img src="images\block 5\more.png" alt="More">
+                        <br>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="H">
+            <a id="Packages section">
+            <h1>POPULAR PACKAGES</h1>
+
+            <div class="H1">
+                <a href="#" style="text-decoration: none;"><div class="H1-1"><img src="images\block 6\bachelors.jpg" alt="Bachelors">
+                    <br>
+                <p>Bachelors trips</p></div>
+                </a>
+
+                <a href="#" style="text-decoration: none;"><div class="H1-2"><img src="images\block 6\educational.jpg" alt="Education">
+                    <br>
+                <p>Education trips</p></div>
+                </a>
+
+                <a href="#" style="text-decoration: none;"><div class="H1-3"><img src="images\block 6\family.avif" alt="Family">
+                    <br>
+                <p>Family trips</p></div>
+                </a>
+
+                <br>
+
+                <div class="G1-alpha">
+                    <a href="#" style="text-decoration: none;"><div class="H1-4"><img src="images\block 6\honeymoon.jpeg" alt="Honeymoon">
+                        <br>
+                    <p>Honeymoon Packages</p></div>
+                    </a>
+
+                    <a href="#" style="text-decoration: none;"><div class="H1-5"><img src="images\block 6\wedding.jpg" alt="Wedding">
+                        <br>
+                    <p>Wedding Packages</p></div>
+                    </a>
+
+                    <a href="#" style="text-decoration: none;"><div class="H1-6"><img src="images\block 5\more.png" alt="More">
+                        <br>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="I">
+            <a id="Contact us">
+                <div class="IA">
+                <div class="I1">
+                    <h1>Service Office</h1>
+                    <center><hr style="width: 200px;text-align:center;margin-top:30px;margin-left:-60px;"></center>
+                    <h3>Travel Agency,<br>Opposite to Brooksfield Mall,<br>Bangalore,<br>Karnataka, India</h3>
+                </div>
+                <div class="I2">
+                    <h1>Head Office</h1>
+                    <center><hr style="width: 180px;text-align:center;margin-top:30px;margin-left:-87px;"></center>
+                    <h3>Travel Agency<br>Near CreateArtist Art Studio,<br>Madurai,<br>TamilNadu, India</h3>
+                </div>
+                <div class="I3">
+                    <h1>Branches</h1>
+                    <center><hr style="width: 200px;text-align:center;margin-top:30px;margin-left:-60px;"></center>
+                    <div class="I3-1">
+                        <h3>Madurai</h3>
+                        <h3>Chennai</h3>
+                        <h3>Coimbatore</h3>
+                        <h3>Erode</h3>
+                        <h3>Trichy</h3>
+                        <h3>Dindigul</h3>
+                    </div>
+                    <div class="I3-2">
+                        <h3>Cochin</h3>
+                        <h3>Bangalore</h3>
+                        <h3>Hyderabad</h3>
+                    </div>
+                </div>
+                </div>
+                <div class="IB">
+                <div class="I4">
+                    <h3>Call us</h3>
+                    <h2>+91 6380656652</h2>
+                </div>
+                <div class="I5">
+                    <h3>Follow us</h3>
+                    <a href="#"><img src="images\block 4\extra logos\facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images\block 4\extra logos\whatsapp.png" alt="Whatsapp"></a>
+                    <a href="#"><img src="images\block 4\extra logos\instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images\block 4\extra logos\twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="images\block 4\extra logos\linkedin.png" alt="Linkedin"></a>
+                    <a href="#"><img src="images\block 4\extra logos\youtube.png" alt="Youtube"></a>
+                </div>
+                <div class="I6">
+                    <h3>Mail us</h3>
+                    <h2>travelagency@gmail.in</h2>
+                </div>
+                </div>
+            </a>
+        </div>
+            <a href="#" class="arrow">
+                <img src="images\up-arrow-png-17994.png" alt="arrow" style="height:30px;width:30px;">
+            </a>
+        </div>
+
+        <div class="Enquiry">
+            <h3><b><a href="enquiry.html" target="_top">Enquiry</a></b></h3>
+        </div>
+
+        <div class="J">
+            <table>
+                <tr>
+                <td><a href="#">Terms and Conditions</a></td>
+                <td><p>|</p></td>
+                <td><a href="#">License</a></td>
+                <td><p>|</p></td>
+                <td><a href="#">Refund Policy</a></td>
+                </tr>
+        </div>
+
+    </body>
+
+</html>

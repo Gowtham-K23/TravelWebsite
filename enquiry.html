@@ -1,0 +1,316 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Travel Agency
+        </title>
+        <link href=images\title.png" rel="icon">
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            .BODY1{
+                background-color: white
+            }
+            .A{
+                background-image: image("images\front page2.jpg");
+            }
+            .A h1{
+                font-size:70px;
+            }
+            .B{
+                border:1px solid black;
+                display: inline-block;
+                background-color: rgb(212, 212, 209);
+                margin-top:45px;
+                margin-bottom: 45px;
+                padding:30px;
+            }
+            .B table{
+                margin: 60px 60px;
+                padding:5px 5px;
+            }
+            .B h3{
+                font-size: 30px;
+            }
+            .B table tr td{
+                padding:10px;
+            }
+            .Submit{
+                background-color: rgba(3, 3, 2, 0.97);
+                border-radius: 20px;
+                border: 0.5px;
+                border-color: black;
+                border-style: solid;
+                margin-top: 20px;
+                margin-bottom: -5px;
+                padding:5px;
+                display:inline-block;
+                transition:1s;
+            }
+            .Submit a{
+                text-decoration: none;
+                text-align: center;
+                color:white;
+            }
+            .Submit:hover{
+                transform: scale(1.1);
+            }
+            .Title1{
+                background-color: black;
+                color:white;
+                display:inline-block;
+                border:2px solid black;
+                margin-left: 50px;
+                padding: 10px;
+                margin-top: -40px;
+                
+            }
+            .BB{
+                background-color: rgb(154, 154, 154);
+            }
+            .I{
+                display: inline-block;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color:white;
+                background-color: rgb(0, 0, 0);
+            }
+            .IA {
+                display:inline-flex;
+                margin-top:45px;
+            }
+            .I1{
+                margin-left: 130px;
+            }
+            .I1 h3{
+                margin-top: 25px;
+            }
+            .I2{
+                margin-left: 220px;
+            }
+            .I2 h3{
+                margin-left:4px;
+                margin-top: 25px;
+            }
+            .I3{
+                margin-left: 245px;
+                display: inline-flexbox;
+            }
+            .I3-1,.I3-2{
+                display: inline-table;
+                margin-top:25px;
+            }
+            .I3-1 h3{
+                margin-bottom:5px;
+            }
+            .I3-2 h3{
+                margin-left: 40px;
+                margin-bottom:5px;
+            }
+            .I3 h1{
+                margin-bottom: 20px;
+            }
+            .IB {
+                margin-top:45px;
+                display:inline-flex;
+            }
+            .I4{
+                
+                margin-left: 130px;
+            }
+            .I4 h2{
+                margin-top:25px;
+            }
+            .I5{
+                margin-left: 300px;   
+            }
+            .I5 img{
+                height:50px;
+                width:50px;
+                padding:7px;
+            }
+            .I5 img{
+                margin-top:25px;
+            }
+            .I6{
+                margin-left: 125px;
+            }
+            .I6 h2{
+                margin-top:25px;
+            }
+            .I4,.I5,.I6{
+                margin-bottom:45px;
+            }
+            .arrow{
+                position: fixed;
+                bottom: 3.5rem;
+                right:1rem;
+                border-radius: 5px;
+                border-color: rgb(0, 21, 255);
+                border-style: solid;
+                background-color: white;
+                display:inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding:0.5rem;
+                text-decoration: none;
+                transition:0.2s ease-out
+            }
+            .arrow img{
+                transition: 0.2s ease-out;
+            }
+            .arrow:hover{
+                background-color: rgb(255, 255, 255);
+            }
+            .arrow:hover img{
+                transform:translateY(-2px);
+            }
+            .J{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 1190px;
+            }
+            .J a{
+                text-decoration: none;
+                color:rgb(0, 38, 255)
+            }
+            .Back{
+                display: inline-block;
+                position:fixed;
+                bottom:2rem;
+                left:3rem;
+            }
+            .Back h3{
+                background-color:rgb(124, 124, 124);
+                border:2px solid rgb(0, 21, 255);
+                font-size: 25px;
+                font-family:sans-serif;
+                padding:10px;
+                border-radius: 20px;
+                transition: 1s;
+            }
+            .Back h3 a{
+                text-decoration: none;
+                color: white;
+            }
+            .Back h3:hover{
+                background: rgb(0, 0, 0);
+                border-radius: 20px;
+                transform: scale(1.1);
+            }
+        </style>
+
+    </head>
+
+    <body class="BODY1">
+        
+        <div class="A">
+            <center><img src="images\title.png" rel="title" alt="title">
+                <h1>Travel Agency</h1>
+            </center>
+        </div>
+        <div class="BB">
+        <center><div class="B">
+            <form class="forms">
+                <table>
+                    <tr><td><h3 class="Title1"><center>Enquire Now</center></h3></td></tr>
+                    <tr><td><input type="text" placeholder="Name" style="height: 40px;width: 300px;"></td></tr>
+                    <tr><td><input type="text" placeholder="City" style="height: 40px;width: 300px;"></td></tr>
+                    <tr><td><input type="text" placeholder="Phone Number" style="height: 40px;width: 300px;"></td></tr>
+                    <tr><td><input type="text" placeholder="WhatsApp Number" style="height: 40px;width: 300px;"></td></tr>
+                    <tr><td><input type="text" placeholder="No. of People" style="height: 40px;width: 300px;"></td></tr>
+                    <tr><td style="font-size: 20px;">Vacation Type<br>
+                        <select style="height: 40px;width: 300px;margin-top: 10px;">
+                            <option>Business Trip</option>
+                            <option>Family Trip</option>
+                            <option>Bachelors Trip</option>
+                            <option>Honeymoon Trip</option>
+                            <option>Wedding Trip</option>
+                            <option>Education Trip</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr><td><center><h3 class="Submit"><a href="#">Submit</a></h3></center></td></tr>
+                </table>
+            </form>
+        </div>
+        </center>
+        </div>
+
+        <div class="I">
+            <a id="Contact us">
+                <div class="IA">
+                <div class="I1">
+                    <h1>Service Office</h1>
+                    <center><hr style="width: 200px;text-align:center;margin-top:30px;margin-left:5px;"></center>
+                    <h3>Travel Agency,<br>Opposite to Brooksfield Mall,<br>Bangalore,<br>Karnataka, India</h3>
+                </div>
+                <div class="I2">
+                    <h1>Head Office</h1>
+                    <center><hr style="width: 180px;text-align:center;margin-top:30px;margin-left:5px;"></center>
+                    <h3>Travel Agency<br>Near CreateArtist Art Studio,<br>Madurai,<br>TamilNadu, India</h3>
+                </div>
+                <div class="I3">
+                    <h1>Branches</h1>
+                    <center><hr style="width: 200px;text-align:center;margin-top:30px;margin-left:-5px;"></center>
+                    <div class="I3-1">
+                        <h3>Madurai</h3>
+                        <h3>Chennai</h3>
+                        <h3>Coimbatore</h3>
+                        <h3>Erode</h3>
+                        <h3>Trichy</h3>
+                        <h3>Dindigul</h3>
+                    </div>
+                    <div class="I3-2">
+                        <h3>Cochin</h3>
+                        <h3>Bangalore</h3>
+                        <h3>Hyderabad</h3>
+                    </div>
+                </div>
+                </div>
+                <div class="IB">
+                <div class="I4">
+                    <h3>Call us</h3>
+                    <h2>+91 6380656652</h2>
+                </div>
+                <div class="I5">
+                    <h3>Follow us</h3>
+                    <a href="#"><img src="images\block 4\extra logos\facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images\block 4\extra logos\whatsapp.png" alt="Whatsapp"></a>
+                    <a href="#"><img src="images\block 4\extra logos\instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images\block 4\extra logos\twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="images\block 4\extra logos\linkedin.png" alt="Linkedin"></a>
+                    <a href="#"><img src="images\block 4\extra logos\youtube.png" alt="Youtube"></a>
+                </div>
+                <div class="I6">
+                    <h3>Mail us</h3>
+                    <h2>travelagency@gmail.in</h2>
+                </div>
+                </div>
+            </a>
+        </div>
+
+        <a href="#" class="arrow">
+            <img src="images\up-arrow-png-17994.png" alt="arrow" style="height:30px;width:30px;">
+        </a>
+
+        <div class="Back">
+            <h3><b><a href="main.html" target="_top">Home Page</a></b></h3>
+        </div>
+
+        <div class="J">
+            <table>
+                <tr>
+                <td><a href="#">Terms and Conditions</a></td>
+                <td><p>|</p></td>
+                <td><a href="#">License</a></td>
+                <td><p>|</p></td>
+                <td><a href="#">Refund Policy</a></td>
+                </tr>
+        </div>
+
+    </body>
+
+</html>
